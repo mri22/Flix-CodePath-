@@ -8,6 +8,8 @@ Time spent: **15** hours spent in total
 
 The following **required** functionality is complete:
 
+There has been an error which made the GIF doesnt appear, sorry!!!
+
 - [x] User can view a list of movies currently playing in theaters from The Movie Database.
 - [x] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [x] User sees a loading state while waiting for the movies API.
