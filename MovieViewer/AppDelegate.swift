@@ -16,6 +16,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let nowPlayingNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MovieViewController
+        nowPlayingViewController.endpoint = "now_playing"
+        nowPlayingNavigationController.tabBarItem.title = "Now Playin'"
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "now playing")
+        
+        let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let topRatedViewController = topRatedNavigationController.topViewController as! MovieViewController
+        topRatedViewController.endpoint = "top_rated"
+        topRatedViewController.tabBarItem.title = "Top Rated"
+        topRatedViewController.tabBarItem.image = UIImage(named: "top rated")
+        
+        let popularNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let popularViewController = popularNavigationController.topViewController as! MovieViewController
+        popularViewController.endpoint = "popular"
+        popularViewController.tabBarItem.title = "Popular"
+        popularViewController.tabBarItem.image = UIImage(named: "popular")
+        
+        
+        let tabBarCorntroller = UITabBarController()
+        tabBarCorntroller.viewControllers = [nowPlayingNavigationController, topRatedViewController, popularNavigationController]
+        
+        window?.rootViewController = tabBarCorntroller
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

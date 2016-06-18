@@ -13,6 +13,7 @@
 		A465AAEB1D1121C900D3D52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A465AAE91D1121C900D3D52C /* LaunchScreen.storyboard */; };
 		A465AAF51D11228700D3D52C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465AAF41D11228700D3D52C /* MovieViewController.swift */; };
 		A465AB341D11EF9D00D3D52C /* Movie Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465AB331D11EF9D00D3D52C /* Movie Cell.swift */; };
+		A4719CC21D133BCD00435E30 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4719CC11D133BCD00435E30 /* DetailViewController.swift */; };
 		DE5919C262A8859AC3E5FE07 /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD464870B881238A6BD1F4C /* Pods_MovieViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		A465AAEC1D1121C900D3D52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A465AAF41D11228700D3D52C /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieViewController.swift; path = ../MovieViewController.swift; sourceTree = "<group>"; };
 		A465AB331D11EF9D00D3D52C /* Movie Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie Cell.swift"; sourceTree = "<group>"; };
+		A4719CC11D133BCD00435E30 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				A465AB321D11EF5300D3D52C /* Views */,
 				A465AAE01D1121C900D3D52C /* AppDelegate.swift */,
 				A465AAE41D1121C900D3D52C /* Main.storyboard */,
+				A4719CC11D133BCD00435E30 /* DetailViewController.swift */,
 				A465AAE71D1121C900D3D52C /* Assets.xcassets */,
 				A465AAE91D1121C900D3D52C /* LaunchScreen.storyboard */,
 				A465AAEC1D1121C900D3D52C /* Info.plist */,
@@ -232,6 +235,7 @@
 				A465AB341D11EF9D00D3D52C /* Movie Cell.swift in Sources */,
 				A465AAE11D1121C900D3D52C /* AppDelegate.swift in Sources */,
 				A465AAF51D11228700D3D52C /* MovieViewController.swift in Sources */,
+				A4719CC21D133BCD00435E30 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
